@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>poptep</title>
+    </head>
+    <body>
+        <p id="pipimi"></p>
+        <p id="popuko"></p>
+        <button id="bkb">クリックしてね！</button>
+        <script type="text/javascript">
+        const team = ['ポ', 'プ', 'テ', 'ピ','ッ','ク'];
+        const take = '\
+　　　　　　　　　　　　　　　　　　　　　　　　　-------　､　ｒへ------､ <br>\
+　　　　　　　　　　　　　　　　　　 ＿__､+\'\'"~　八 　　　　　~\'\'＜ つ　　　＼ <br>\
+　　　　　　　　　　　　　　 _､+\'\'"~　 ./ ,:　　　　＾ 　 丶　　　　　ヽく＿＿　∧ <br>\
+　　　　　　 , -r-　　　　 / 　 　 　 / / -､　　　　\'´￣!＼‘,　‘:,　 |　　　 ＼/ <br>\
+　　　　　／ .∧　　 ＼..ﾞ|/＿,,.｡*\'/ /|,\/＼＿_／^ヽ /,,_　`! 　 \',　| <br>\
+　　　 ／　　　∧　　　 ＼　〈〉.　,　.|　ｙ\'\'"ヽ______ 7´⌒ヽ _|　　ト;′ <br>\
+　　 〈　　　　　 ∧ （竹） .∨...　｜｜ ,r　ヽ 三三/　　‘:, Y!　 .|,′ <br>\
+　　　∨ 　 　 　 ∧　　　　∨...　|　.|八 °,!三三{.　° ﾉ 八　/---､ <br>\
+.　　　 ∨ 　 　 　 ∧　　　　∨....∨（.＾ 　　 ､_,､_, \`　　　,.ｨ^!./＿　　\', <br>\
+　　　　 ∨　　 ／三ﾐメ、　　∨　冫≧=‐------‐ｧ=≦/ .|/　　 } 　 ! <br>\
+.　　　 　 ∨三三三三圦__.＼＼/　＼|ｲ `\'\'＜:＼/:::::／　　|　　（＿__） <br>\
+　　　 〈〉　　 ノ　ゞ三ｼ.　＼　＼;　　 { /　　　 ｀¨ﾍ⌒こフ　.∨ 〔､､､_） <br>\
+　　　　　　　）　　　 　 　 　 ＼八　　`^i､_ __　　　 ＼＼　　 .∨ ｀¨´ <br>\
+　　　　 ＜ﾍ＿/三＼＿／｜＼､.＼　/::/　 ）　　　　 `\'´　＿ ,∨､ <br>\
+　　　　|＼三三三三:／　　|.　　＼/^ゞク≦---‐=≦::::::「:::::::::|::::/ <br>\
+　　　　　　　　 　 　 　 　 　 　 　 /:::::::/:::::::/:::::::::;′:::::::::|::::::::::|:人<br>\
+happy end!!\n\
+';
+
+        function pptp(){
+            var pipimi = document.getElementById('pipimi');
+            pipimi.textContent = '';
+            var popuko = document.getElementById('popuko');
+            popuko.textContent = '';
+            var pop = setInterval(function(){
+                pipimi.insertAdjacentText("beforeend",team[getRandomInt(0, 5)]);
+                if(pipimi.textContent.endsWith('ポプテピピック')){
+                    clearInterval(pop);
+                    popuko.innerHTML = take;
+                }
+            }, 10);
+        }
+
+        function getRandomInt(min, max){
+            return Math.floor( Math.random() * (max - min + 1) ) + min;
+        }
+
+        document.getElementById('bkb').addEventListener('click', pptp);
+
+        </script>
+    </body>
+</html>
