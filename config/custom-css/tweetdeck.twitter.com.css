@@ -3,17 +3,17 @@
     --original-gray:rgba(158,158,158 ,1);
     --original-black:rgba(33,33,33 ,1);
     --Dark:rgba(27,40,54,1);
-    --deepDark:rgba(61,84,102,1);
-    --lightDark:rgba(96,125,139 ,1);
+    --deep-dark:rgba(61,84,102,1);
+    --light-dark:rgba(96,125,139 ,1);
 }
 
 .js-compose-text{
-    background-color:var(--lightDark) !important;
+    background-color:var(--light-dark) !important;
     color:var(--original-white) !important;
 }
 
 .position-rel.compose-text-container{
-    background-color:var(--lightDark) !important;
+    background-color:var(--light-dark) !important;
 }
 
 .js-tweet-text{
@@ -30,7 +30,7 @@
 }
 
 .list-account:hover{
-    background-color:var(--lightDark) !important;
+    background-color:var(--light-dark) !important;
 }
 
 .l-column{
@@ -54,7 +54,7 @@
 }
 
 .js-social-proof{
-    background: var(--deepDark) !important;
+    background: var(--deep-dark) !important;
     border-bottom: thin var(--original-white) solid !important;
 }
 
@@ -63,11 +63,11 @@
 }
 
 .prf-actions{
-    background: var(--deepDark);
+    background: var(--deep-dark);
 }
 
 .prf-meta{
-    background: var(--deepDark) !important;
+    background: var(--deep-dark) !important;
     border-bottom: thin var(--original-white) solid !important;
 }
 
