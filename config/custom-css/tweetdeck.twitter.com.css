@@ -64,6 +64,8 @@
 
 .prf-actions{
     background: var(--deep-dark);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .prf-meta{
