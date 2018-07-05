@@ -108,3 +108,25 @@
 .tweet-body .js-quote-detail{
     background-color:var(--deep-dark);
 }
+
+.color-twitter-dark-black{
+    background-color: var(--deep-dark) !important;
+}
+
+.mdl{
+    background-color: var(--Dark) !important;
+}
+
+.mdl-inner{
+    background-color: var(--Dark) !important;
+    border-bottom: thin var(--original-white) solid;
+    color: var(--original-white);
+}
+
+.js-dropdown-content li a{
+    color: var(--original-white) !important;
+}
+
+.js-modal-content .inline-block span,.js-modal-content .js-from-username span{
+    color: var(--original-white);
+}
