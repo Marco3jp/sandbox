@@ -29,6 +29,10 @@
     text-shadow:none !important;
 }
 
+.username{
+    color:rgba(224,224,224 ,1) !important;
+}
+
 .list-account:hover{
     background-color:var(--light-dark) !important;
 }
@@ -87,4 +91,16 @@
 
 .js-column-scroller{
     background-color:var(--Dark) !important;
+}
+
+.js-quote-tweet-holder{
+    background-color:var(--light-dark) !important;
+}
+
+.js-quote-detail{
+    background-color:rgba(120,144,156 ,1);
+}
+
+.js-quote-detail a{
+    color:rgba(179,229,252 ,1) !important;
 }
