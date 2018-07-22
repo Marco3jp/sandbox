@@ -138,3 +138,7 @@
 .js-in-reply-to {
     background-color: var(--light-dark) !important;
 }
+
+.js-media-native-video {
+    width: 100% !important;
+}
