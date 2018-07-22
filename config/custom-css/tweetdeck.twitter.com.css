@@ -16,6 +16,10 @@
     background-color:var(--light-dark) !important;
 }
 
+.js-in-reply-to:not(.is-hidden) ~ .position-rel.compose-text-container{
+    border-top: thin solid var(--original-white);
+}
+
 .js-tweet-text{
     color:var(--original-white);
 }
