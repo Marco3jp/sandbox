@@ -134,3 +134,7 @@
 .js-modal-content .inline-block span,.js-modal-content .js-from-username span{
     color: var(--original-white);
 }
+
+.js-in-reply-to {
+    background-color: var(--light-dark) !important;
+}
