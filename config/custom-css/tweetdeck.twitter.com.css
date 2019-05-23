@@ -27,6 +27,16 @@ html.dark .bg-color-twitter-white{
     border-top: thin solid var(--original-white);
 }
 
+html.dark .drawer.wide{
+    width: 300px;
+    left: -300px;
+}
+
+.app-content.is-open{
+    transform: translateX(300px) !important;
+    margin-right: 300px !important;
+}
+
 .js-tweet-text{
     color:var(--original-white);
 }
